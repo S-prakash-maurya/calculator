@@ -1,0 +1,33 @@
+* {
+  background-color: rgb(255, 255, 255);
+}
+.Calculator-App {
+  margin: 0 auto;
+  margin-top: 40px;
+width: 290px;
+  text-align: center;
+}
+
+.keywords {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(40px, auto);
+}
+
+input[type="text"] {
+  height: 35px;
+  width: 280px;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+#clear {
+  grid-column: 1/3;
+  grid-row: 1;
+}
+
+#result {
+  grid-column: 3/4;
+  grid-row: 4;
+}
